@@ -1,0 +1,19 @@
+<p>
+	<h1>Add Product</h1>
+	<form method="POST">
+		<label for="name">Product Name:</label>
+		<input type="text" id="name" name="name" required>
+		<br>
+		<label for="quantity">Quantity:</label>
+		<input type="number" id="quantity" name="quantity" required>
+		<br>
+		<label for="location">Location:</label>
+		<input type="text" id="location" name="location" required>
+		<br>
+		<input type="submit" value="Add Product">
+	</form>
+
+	{% if message %}
+		<p>{{ message }}</p>
+	{% endif %}
+</p>
